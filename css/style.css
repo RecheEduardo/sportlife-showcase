@@ -1,0 +1,502 @@
+:root{
+    --dark-soft-blue: #071118;
+    --soft-white: #dbe0e6;
+    --soft-gold: #bd700c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Crismon Text";
+    background-color: var(--dark-soft-blue);
+    background: linear-gradient(180deg, rgba(7,17,24,1) 0%, rgba(4,23,37,1) 100%);
+    background-image: url("../imgs/wallpaper.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--soft-white);
+    box-shadow: inset 0 -5px 0 var(--soft-gold);
+    height: 100%;
+}
+p{
+    font-family: "Poppins";
+    font-weight: 300;
+}
+.flex{ display: flex; }
+
+.visible { opacity: 1; }
+
+/* Barra de Navegação */
+.site-nav{
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    height: 11svh;
+    padding-inline: 10%;
+    font-family: "Poppins";
+    font-weight: 200;
+}.site-nav a{
+    text-decoration: none;
+    color: var(--soft-white);
+    font-size: 1.6rem;
+}
+.site-nav li{ transition: 0.25s ease-in-out; opacity: 0;}
+
+.site-nav li:hover{ transform: scale(1.1); transition: 0.25s ease-in-out; }
+
+.site-nav li:nth-child(1){ animation: fadeInDown 1.5s; }
+
+.site-nav li:nth-child(2){ animation: fadeInDown 1.5s 0.2s; }
+
+.site-nav li:nth-child(3){ animation: fadeInDown 1.5s 0.4s; }
+
+.site-nav li:nth-child(4){ animation: fadeInDown 1.5s 0.6s; }
+
+/* Página Inicial */
+.home{
+    height: 89svh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding-inline: 5%;
+    gap: 50px;
+} .home h1{
+    font-size: 8rem;
+    animation: float 2s alternate infinite ease-in-out;
+    transition: 1s ease-in-out;
+    cursor: default;
+}.home h1:hover{
+    scale: 1.05;
+    transition: 1.5s;
+} 
+.home span{
+    font-style: italic;
+    color: var(--soft-gold);
+} .home p{
+    border-radius: 5px;
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.home-infos{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.home-imgs{
+    gap: 15px;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-in-out 0.5s;
+}.home-imgs img { 
+    border-radius: 5px; 
+    transition: 0.25s ease-in-out;
+}.home-imgs img:hover{
+    transform: scale(1.05);
+    transition: 0.25s ease-in-out;
+}
+
+.bigger-photo img { max-width: 400px; }
+
+.smallest-photos{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}.smallest-photos img {  max-height: 335px; }
+
+/* Como Surgiu a estética */
+.about{
+    gap: 80px;
+    padding-inline: 15%;
+    height: 89svh;
+}
+
+.about-info{
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap: 50px;
+    margin-bottom: 50px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+.about-info span, h2{ font-style: italic; }
+
+.about-info h1{
+    font-size: 7rem;
+    transition: 0.5s ease-in-out;
+    cursor: default;
+}
+.about-info h1 span, .about-info p span, .about-info h2{ color: var(--soft-gold); }
+
+.about-info h1:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+.about-info h2{ font-size: 3.5rem; }
+
+.about-info p{
+    font-size: 1rem;
+    text-align: justify;
+}
+.about-info p span{ font-weight: bold; }
+
+.about-imgs{ animation: fadeInLeft 2s; }
+
+.about-imgs img{
+    max-height: 800px;
+    animation: float 1.5s infinite alternate ease-in-out;    
+}
+
+/* Marcas */
+.brands{
+    flex-direction: column;
+    gap: 50px;
+    height: 89svh;
+    font-size: 2.5rem;
+    padding-inline: 5%;
+}
+
+.brands-title { 
+    margin-top: 25px;
+    font-size: 4rem;
+    animation: fadeInRight 1.5s;
+    cursor: default;
+    transition: 0.75s;
+}.brands-title:hover{
+    scale: 1.05;
+    transition: 0.75s;
+}
+.brands-title span{
+    font-style: italic;
+    color: var(--soft-gold);
+}
+
+.brands-description{
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+.brands-description img{ max-width: 250px; }
+
+.brands-description img, h2{
+    animation: pulse 2s alternate infinite ease-in-out;
+    cursor: default;
+}
+
+.nike{ animation: fadeInRight 2s; }
+
+.adidas{ animation: fadeInUp 2s; }
+
+.oakley{ animation: fadeInLeft 2s; }
+
+.nike, .adidas, .oakley { width: 25vw; }
+
+.nike p, .adidas p, .oakley p{ font-size: 1.15rem; }
+
+.nike p, .oakley p{ padding-top: 15px; }
+
+.nike , .oakley{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nike h2, .adidas h2{
+    color: var(--soft-gold);
+    margin-bottom: -60px;
+    z-index: 1;
+}
+
+.adidas{
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.oakley h2{ 
+    z-index: 1; 
+    position: relative;
+    color: var(--soft-gold); 
+}.oakley img{ margin-top: -70px; }
+
+/* Influencias Culturais */
+.influences{
+    height: 89svh;
+    justify-content: center;
+    gap: 7%;
+    padding-inline: 75px;
+}
+.influences span{ color: var(--soft-gold); }
+
+.influences img{ border-radius: 20px; }
+
+.influences h1{ animation: float 2s infinite alternate ease-in-out; }
+
+.influences-mural{
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 50px;
+}
+.influences-mural img{ max-width: 350px; }
+
+.lacoste-influence, .nike-influence{
+    align-items: center;
+    gap: 25px;
+}
+
+.lacoste-influence h1, .nike-influence h1{
+    font-size: 3.5rem;
+    padding-bottom: 25px;
+    font-style: italic;
+}
+
+.lacoste-influence p, .nike-influence p{
+    text-align: justify;
+    font-size: 0.90rem;
+}
+
+.lacoste-influence{ animation: fadeInRight 2s; }
+
+.nike-influence{
+    flex-direction: row-reverse;
+    animation: fadeInRight 2s;
+}
+.nike-influence h1{ text-align: right; }
+
+.adidas-influence{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 40%;
+    animation: fadeInDown 2s;
+    padding-top: 50px;
+}.adidas-influence h1{
+    font-style: italic;
+    font-size: 3.5rem;
+}.adidas-influence p{
+    text-align: justify;
+    font-size: 1rem;
+}.adidas-influence img{ max-width: 600px; }
+
+/* Animações */
+@keyframes float {
+    from{ transform: translateY(0px); }
+
+    to{ transform: translateY(15px); }
+}
+@keyframes fadeInUp {
+    from{ opacity: 0%; transform: translateY(60px); }
+
+    to{ opacity: 100%; transform: translateY(0px); }
+}
+@keyframes fadeInDown {
+    from{ opacity: 0%; transform: translateY(-60px); }
+
+    to{ opacity: 100%; transform: translateY(0px); }
+}
+@keyframes fadeInLeft {
+    from{ opacity: 0%; transform: translateX(60px); }
+
+    to{ opacity: 100%; transform: translateX(0px); }
+}
+@keyframes fadeInRight {
+    from{ opacity: 0%; transform: translateX(-60px); }
+    
+    to{ opacity: 100%; transform: translateX(0px); }
+}
+@keyframes pulse{
+    from{ scale: 1; }
+
+    to{ scale: 1.1; }
+}
+
+/* Menu mobile */
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 30px;
+    height: 3px;
+    background-color: var(--soft-white);
+    margin: 8px;
+    box-shadow: 0px 0px 50px 2px rgba(0,0,0,1);
+}
+
+
+@media (max-width: 1700px) {
+
+    /* Home */
+    .home-imgs{ display: none; }
+
+    .home-infos h1{ font-size: 7rem; }
+
+    /* About */
+    .about{
+        padding-inline: 100px;
+        gap: 25px;
+    }
+    .about-info h1{ font-size: 5.5rem; }
+
+    .about-info h2{ font-size: 3rem; }
+
+    .about-info div p{ font-size: 0.9rem; }
+    
+    /* Influences */
+    .influences{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 100px;
+        padding-bottom: 100px;
+    }
+    .influences-mural{ gap: 100px; }
+    .adidas-influence{
+        padding-top: 0px;
+        align-items: center;
+        max-width: none;
+    }
+}
+
+
+@media (max-width: 1300px) {
+
+    /* Menu Mobile Responsivo */
+    body{ overflow-x: hidden; }
+
+    main{ transition: 1.25s ease-out; }
+
+    .hidden{ overflow-y: hidden; }
+
+    .blurred{
+        filter: blur(13px);
+        transition: 0.5s ease-in;
+    }
+    .site-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 90vw;
+        height: 100vh;
+        background: var(--dark-soft-blue);
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        box-sizing: border-box;
+        transition: 0.75s ease-in;
+    }
+    .site-nav li{ text-align: center; }
+    .site-nav.active{
+        transform: translateX(0);
+        transition: 0.75s ease-out;
+    }
+    .mobile-menu{
+        display: block;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        padding: 15px;
+    }
+
+    /* Home */
+    .home{ height: 100svh; }
+    
+    /* Brands */
+    .brands{ height: auto; }
+
+    .brands-title h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .brands-description{
+        flex-direction: column;
+        gap: 150px;
+        padding-bottom: 120px;
+    }
+    .nike, .adidas, .oakley{
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 0px;
+        animation: 2s fadeInUp;
+    }
+    .adidas{ flex-direction: row-reverse; }
+
+    .nike h2, .adidas h2, .oakley h2{ display: none; }
+
+    .brands-description img{
+        max-width: 180px;
+        height: fit-content;
+        margin-top: 0px;
+    }
+
+    /* About */
+    .about{
+        padding: 50px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;;
+    }
+    .about-info{ margin-bottom: 0px; }
+
+    .about-info h1{
+        font-size: 6rem;
+        text-align: center;
+    }
+    .about-info h2{ text-align: center; }
+    
+    .about-info div p{ font-size: 1.25rem; }
+}
+
+@media (max-width: 810px) {
+
+    /* Home */
+    .home-infos h1{ font-size: 4rem; }
+
+    .home-infos p{ font-size: 1.15rem; }
+
+    /* About */
+    .about{ padding-inline: 25px; }
+
+    .about-info h1{ font-size: 4.25rem; }
+
+    .about-info h2{ font-size: 3rem; }
+
+    .about-info div p{ font-size: 1rem; }
+
+    .about-imgs{ animation: fadeInUp 2s; }
+
+    .about-imgs img{ max-width: 80svw; }
+
+    /* Brands */
+    .brands-description{ gap: 100px; }
+
+    .nike ,.adidas,.oakley{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .nike p,.adidas p,.oakley p{ text-align: justify; }
+
+    /* Influences */
+    .influences{
+        padding-inline: 20px;
+        gap: 150px;
+    }
+    .lacoste-influence{ flex-direction: column; }
+
+    .nike-influence{  flex-direction: column-reverse; }
+
+    .adidas-influence img{ max-width: 325px; }
+
+    .influences-mural img{ max-height: 300px; }
+}
