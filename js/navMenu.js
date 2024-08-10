@@ -5,19 +5,19 @@ const brands = document.querySelector(".site-nav li:nth-child(3)");
 const influences = document.querySelector(".site-nav li:nth-child(4)");
 
 setTimeout(() => {
-  home.classList.add = "visible";
+  home.style.opacity = "1";
 }, 1000);
 
 setTimeout(() => {
-  about.classList.add = "visible";
+  about.style.opacity = "1";
 }, 1200);
 
 setTimeout(() => {
-  brands.classList.add = "visible";
+  brands.style.opacity = "1";
 }, 1400);
 
 setTimeout(() => {
-  influences.classList.add = "visible";
+  influences.style.opacity = "1";
 }, 1600);
 
 // Navbar Responsiva

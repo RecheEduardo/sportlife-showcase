@@ -2,5 +2,5 @@
 const homeImgs = document.querySelector(".home-imgs");
 
 setTimeout(() => {
-  homeImgs.classList.add = "visible";
+  homeImgs.style.opacity = "1";
 }, 1500);

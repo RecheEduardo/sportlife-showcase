@@ -28,8 +28,6 @@ p{
 }
 .flex{ display: flex; }
 
-.visible { opacity: 1; }
-
 /* Barra de Navegação */
 .site-nav{
     justify-content: space-between;
