@@ -382,7 +382,7 @@ p{
         top: 0;
         right: 0;
         width: 90vw;
-        height: 100vh;
+        height: 100svh;
         background: var(--dark-soft-blue);
         z-index: 1;
         flex-direction: column;
@@ -434,7 +434,7 @@ p{
 
     .brands-description img{
         max-width: 180px;
-        height: fit-content;
+        height: auto;
         margin-top: 0px;
     }
 
