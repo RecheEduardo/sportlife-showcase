@@ -382,7 +382,7 @@ p{
         top: 0;
         right: 0;
         width: 90vw;
-        height: 100svh;
+        height: 100vh;
         background: var(--dark-soft-blue);
         z-index: 1;
         flex-direction: column;
