@@ -1,10 +1,11 @@
 <h1 align="center">⚽ SportLife Showcase ☯</h1>
 
-<p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brazilian_flag_icon_round.svg/512px-Brazilian_flag_icon_round.svg.png?20180509193906" /> Meu projeto de finalização da disciplina de Front-End do IFSP, feito inteiramente com ferramentas as própias ferramentas nativas das respectivas tecnologias!</p>
+<p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brazilian_flag_icon_round.svg/512px-Brazilian_flag_icon_round.svg.png?20180509193906" /> Meu projeto de finalização da disciplina de Front-
+End do IFSP, feito inteiramente com ferramentas as própias ferramentas nativas das respectivas tecnologias!</p>
 <p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/512px-United-states_flag_icon_round.svg.png" /> My final project for the Front-End course at the IFSP, done entirely with the native tools of the respective technologies!</p>
 <img src="https://github.com/RecheEduardo/sportlife-showcase/blob/main/imgs/sitebanner.jpg?raw=true" width="100%" padding-top="2000px" align="center">
 
-# O que busquei aprimorar nesse projeto:
+# • Quais habilidades busquei aprimorar nesse projeto:
 
 * Exercitar métodos de resolução de problemas, utilizando-se apenas das ferramentas básicas proporcionadas pelas linguagens.
 
@@ -16,7 +17,7 @@
 
 * Mecânicas e técnicas para estilização responsiva de conteúdo, mantendo um código entendível e evitando práticas não recomendadas como verbosidade e código excessivo.
 
-# Sobre o projeto:
+# • Sobre o projeto:
 <p align="justify">Este projeto simboliza muito mais do que apenas um site, simboliza o fim de um ciclo repleto de aprendizado com tecnologias web, onde pude me aprimorar cada vez mais para entregar um resultado satisfatório. Por diversas vezes pensei que não seria capaz de estruturar este projeto e avançar na ideia, porém, com muito empenho pude externalizar projetos e assim aprendendo cada vez mais com os mesmos.</p>
 <p align="justify">O site apresenta uma estética audiovisual conhecida como Sportlife, famosa por incrementar artigos de moda com a identidade periférica. Logo, era necessário que a estilização do projeto fosse condizente com o seu conteúdo, onde tive liberdade criativa de desenvolver designs únicos e arriscar em figuras conceituais para exemplificar tópicos (Lembrando, tudo isso apenas utilizando HTML e CSS, sem outras bibliotecas ou frameworks envolvidos no processo!).</p>
 
@@ -31,7 +32,7 @@ https://github.com/user-attachments/assets/efe999b7-edce-49d4-99d8-70d96665fd75
 
 https://github.com/user-attachments/assets/ec44e4f1-11eb-4d5e-8bc0-209c3dd76822
 
-# Tecnologias Utilizadas:
+# • Tecnologias Utilizadas:
 
 <img loading="lazy" height = "35" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
 
